@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: "Poppins";
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 40px;
+  font-family: "Lilita One";
+  -webkit-text-stroke: 2px #3342e8; /* width and color */
+}
