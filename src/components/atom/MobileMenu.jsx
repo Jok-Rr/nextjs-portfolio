@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { navLinks } from "../../lib/config";
-import { Button } from "./Button";
+import { LinkButton } from "./LinkButton";
 import { Logo } from "./Logo";
 
 export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
@@ -25,9 +25,13 @@ export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
             </Link>
           );
         })}
-        <Button size="default" onClick={() => setIsOpenMenu(!isOpenMenu)}>
-          Me Contacter
-        </Button>
+        <Link
+          href="#contact"
+          className="bg-neonblue rounded-xl text-xl font-bold py-2.5 px-8"
+          onClick={() => setIsOpenMenu(!isOpenMenu)}
+        >
+          Me contacter
+        </Link>
       </nav>
 
       <i

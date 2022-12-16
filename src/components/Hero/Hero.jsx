@@ -1,8 +1,9 @@
 import Image from "next/image";
 import me from "/public/images/portrait.png";
-import { Button } from "../atom/Button";
+
 import { IconGithub } from "../atom/IconGithub";
 import { IconLinkedin } from "../atom/IconLinkedin";
+import { LinkButton } from "../atom/LinkButton";
 
 export const Hero = () => {
   return (
@@ -18,9 +19,7 @@ export const Hero = () => {
         amet pellentesque felis. In ac massa sed lorem lobortis interdum.
       </p>
       <div className="col-span-4 mt-5 flex justify-center">
-        <Button size="default" className="col-span-1">
-          Me Contacter
-        </Button>
+        <LinkButton href="#contact">Me Contacter</LinkButton>
         <IconGithub style="ml-4" />
         <IconLinkedin style="ml-4" />
       </div>

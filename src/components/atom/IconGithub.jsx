@@ -1,15 +1,17 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import { gitLink } from "../../lib/config";
 import gitIcon from "/public/vectors/square-github.svg";
 
 export const IconGithub = ({ style }) => {
   return (
-    <Image
-      src={gitIcon}
-      width="38"
-      height={38}
-      alt="qfds"
-      className={`inline ${style}`}
-    />
+    <Link href={gitLink} target="_blank" className={`flex ${style}`}>
+      <Image
+        src={gitIcon}
+        width="38"
+        height={38}
+        alt="Lien de redirection vers Github de Tom"
+      />
+    </Link>
   );
 };
