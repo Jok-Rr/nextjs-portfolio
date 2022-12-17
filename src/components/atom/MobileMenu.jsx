@@ -1,13 +1,20 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { navLinks } from "../../lib/config";
 import { LinkButton } from "./LinkButton";
 import { Logo } from "./Logo";
 
 export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
+  useEffect(() => {
+    if (isOpenMenu) {
+      document.body.classList.add("overflow-hidden");
+      return;
+    }
+    document.body.classList.remove("overflow-hidden");
+  }, [isOpenMenu]);
   return (
     <div
-      className={`absolute w-full h-full top-0 left-0 bg-noblack m-auto pt-16 pb-16 flex flex-col items-center justify-between 
+      className={`absolute w-full h-full top-0 left-0 bg-noblack m-auto pt-16 pb-16 flex flex-col items-center justify-between z-50
       ${isOpenMenu ? "" : "hidden"} `}
     >
       <Logo width="103.75" height="86" />
