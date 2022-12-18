@@ -10,7 +10,7 @@ export default function Document() {
           href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css"
         />
       </Head>
-      <body className="dark:bg-noblack dark:text-white">
+      <body className="dark:bg-noblack dark:text-white relative">
         <Main />
         <NextScript />
       </body>

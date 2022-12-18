@@ -8,7 +8,12 @@ import { LinkButton } from "../atom/LinkButton";
 export const Hero = () => {
   return (
     <div className="grid grid-cols-4 mx-8 py-12 text-center">
-      <Image src={me} alt="Me" className="col-span-4 m-auto drop-shadow-aura" />
+      <Image
+        src={me}
+        alt="Me"
+        priority="false"
+        className="col-span-4 m-auto drop-shadow-aura"
+      />
       <h1 className="col-span-4 my-7">
         Développeur Web &<br /> Graphiste
       </h1>

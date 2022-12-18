@@ -6,12 +6,7 @@ import gitIcon from "/public/vectors/square-github.svg";
 export const IconGithub = ({ style }) => {
   return (
     <Link href={gitLink} target="_blank" className={`flex ${style}`}>
-      <Image
-        src={gitIcon}
-        width="38"
-        height={38}
-        alt="Lien de redirection vers Github de Tom"
-      />
+      <Image src={gitIcon} alt="Lien de redirection vers Github de Tom" />
     </Link>
   );
 };

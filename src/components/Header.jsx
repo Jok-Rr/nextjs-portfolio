@@ -1,13 +1,16 @@
-"use client";
-
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Logo } from "./atom/Logo";
 import { MobileMenu } from "./atom/MobileMenu";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [scrolling, setScrolling] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrolling(window.pageYOffset);
+    });
+  }, [scrolling]);
 
   const handleClickMenu = () => {
     return setIsOpenMenu(!isOpenMenu);
@@ -15,8 +18,12 @@ const Header = () => {
 
   return (
     <>
-      <div className=" flex w-full justify-between items-center px-8 py-5 fixed">
-        <Logo width="47" height="57" />
+      <div
+        className={` flex w-full justify-between items-center px-8 py-5 fixed z-40 ${
+          scrolling > 10 && "backdrop-blur"
+        }`}
+      >
+        <Logo width="47" />
         <i
           className="fa-solid fa-bars text-neonblue text-3xl"
           onClick={handleClickMenu}

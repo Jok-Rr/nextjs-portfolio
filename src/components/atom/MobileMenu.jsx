@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { navLinks } from "../../lib/config";
-import { LinkButton } from "./LinkButton";
 import { Logo } from "./Logo";
 
 export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
@@ -14,10 +13,10 @@ export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
   }, [isOpenMenu]);
   return (
     <div
-      className={`absolute w-full h-full top-0 left-0 bg-noblack m-auto pt-16 pb-16 flex flex-col items-center justify-between z-50
+      className={`fixed w-full h-screen top-0 left-0 bg-noblack m-auto pt-16 pb-16 flex flex-col items-center justify-between z-50
       ${isOpenMenu ? "" : "hidden"} `}
     >
-      <Logo width="103.75" height="86" />
+      <Logo width="105" />
 
       <nav className="gap-12 flex flex-col text-center capitalize">
         {navLinks.map(({ id, path, navText }) => {
@@ -42,7 +41,7 @@ export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
       </nav>
 
       <i
-        className="fa-solid fa-xmark text-neonblue text-5xl"
+        className="fa-solid fa-xmark text-neonblue text-5xl hover:scale-110"
         onClick={handleClickMenu}
       ></i>
     </div>
