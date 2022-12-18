@@ -14,9 +14,7 @@ export const Hero = () => {
         priority="false"
         className="col-span-4 m-auto drop-shadow-aura"
       />
-      <h1 className="col-span-4 my-7">
-        Développeur Web &<br /> Graphiste
-      </h1>
+      <h1 className="col-span-4 my-7">Développeur Web & Graphiste</h1>
       <p className="col-span-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
         eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium
