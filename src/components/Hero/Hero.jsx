@@ -4,10 +4,11 @@ import me from "/public/images/portrait.png";
 import { IconGithub } from "../atom/IconGithub";
 import { IconLinkedin } from "../atom/IconLinkedin";
 import { LinkButton } from "../atom/LinkButton";
+import { Container } from "../atom/Container";
 
 export const Hero = () => {
   return (
-    <div className="grid grid-cols-4 mx-8 py-12 text-center">
+    <Container>
       <Image
         src={me}
         alt="Me"
@@ -26,6 +27,6 @@ export const Hero = () => {
         <IconGithub style="ml-4" />
         <IconLinkedin style="ml-4" />
       </div>
-    </div>
+    </Container>
   );
 };
