@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { About } from "../src/components/About";
 import { Hero } from "../src/components/Hero";
+import { Roadmap } from "../src/components/Roadmap";
 import { Skill } from "../src/components/Skill";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skill />
+      <Roadmap />
     </>
   );
 }
