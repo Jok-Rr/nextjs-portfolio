@@ -15,7 +15,12 @@ export const Hero = () => {
         priority="false"
         className="col-span-4 m-auto drop-shadow-aura"
       />
-      <h1 className="col-span-4 my-7">Développeur Web & Graphiste</h1>
+      <h1 className="col-span-4 my-7">
+        <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-neonblue relative inline-block">
+          <span class="relative text-white">Développeur Web </span>
+        </span>
+        & Graphiste
+      </h1>
       <p className="col-span-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
         eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium

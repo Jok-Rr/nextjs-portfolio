@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { About } from "../src/components/About";
+import { Contact } from "../src/components/Contact";
 import { Hero } from "../src/components/Hero";
 import { Project } from "../src/components/Project";
 import { Roadmap } from "../src/components/Roadmap";
@@ -20,6 +21,7 @@ export default function Home() {
       <Roadmap />
       <Project />
       <Testimonial />
+      <Contact />
     </>
   );
 }
