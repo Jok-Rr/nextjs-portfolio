@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={` flex w-full justify-between items-center px-8 py-5 fixed z-40 ${
+        className={` flex w-full justify-between items-center px-8 py-5 fixed z-10 ${
           scrolling > 10 && "backdrop-blur"
         }`}
       >

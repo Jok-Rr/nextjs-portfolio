@@ -6,14 +6,15 @@ import { Logo } from "./Logo";
 export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
   useEffect(() => {
     if (isOpenMenu) {
-      document.body.classList.add("overflow-hidden");
+      document.documentElement.classList.add("overflow-hidden");
       return;
     }
-    document.body.classList.remove("overflow-hidden");
+    document.documentElement.classList.remove("overflow-hidden");
   }, [isOpenMenu]);
+
   return (
     <div
-      className={`fixed w-full h-screen top-0 left-0 bg-noblack m-auto pt-16 pb-16 flex flex-col items-center justify-between z-50
+      className={`fixed w-full h-screen top-0 left-0 bg-noblack m-auto pt-16 pb-16 flex flex-col items-center justify-between z-20
       ${isOpenMenu ? "" : "hidden"} `}
     >
       <Logo width="105" />
