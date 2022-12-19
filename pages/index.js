@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { About } from "../src/components/About";
 import { Hero } from "../src/components/Hero";
+import { Project } from "../src/components/Project";
 import { Roadmap } from "../src/components/Roadmap";
 import { Skill } from "../src/components/Skill";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Skill />
       <Roadmap />
+      <Project />
     </>
   );
 }
