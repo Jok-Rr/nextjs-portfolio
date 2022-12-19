@@ -1,17 +1,8 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
-export const RoadmapCard = ({
-  title,
-  subtitle,
-  content,
-  date,
-  icon,
-  key,
-  type,
-}) => {
+export const RoadmapCard = ({ title, subtitle, content, date, icon, type }) => {
   return (
     <VerticalTimelineElement
-      key={key}
       className="vertical-timeline-element--work"
       contentStyle={{ background: "#121212", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid  #121212" }}
@@ -27,7 +18,7 @@ export const RoadmapCard = ({
         type === "work" ? (
           <i className="fa-solid fa-suitcase"></i>
         ) : (
-          <i class="fa-solid fa-graduation-cap"></i>
+          <i className="fa-solid fa-graduation-cap"></i>
         )
       }
     >
