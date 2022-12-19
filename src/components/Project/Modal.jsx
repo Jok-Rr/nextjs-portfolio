@@ -11,7 +11,7 @@ export const Modal = ({ showModal, targetProject, setShowModal }) => {
       }`}
     >
       <div
-        className={`bg-noblack fixed drop-shadow-aura w-11/12 h-max top-0 bottom-0 right-0 left-0 z-30 m-auto rounded-xl p-7`}
+        className={`bg-noblack fixed drop-shadow-aura w-11/12 h-fit top-0 bottom-0 right-0 left-0 z-30 m-auto rounded-xl p-7`}
       >
         <div className="headerModal flex justify-end text-3xl">
           <i
@@ -21,33 +21,16 @@ export const Modal = ({ showModal, targetProject, setShowModal }) => {
             }}
           ></i>
         </div>
-        <div className="contentModal flex flex-col justify-between h-3/4">
-          <div>
-            <Heading2>{PROJECTS[targetProject].title}</Heading2>
-            <p className="pb-6">{PROJECTS[targetProject].description}</p>
-            {/* <div className="mb-6">
-              <Heading3>Les techno utilisées</Heading3>
-              <div className="stack flex justify-between ">
-                {PROJECTS[targetProject].stack.map((data, index) => {
-                  return (
-                    <span
-                      className="font-semibold p-2 bg-neonblue w-fit rounded-xl"
-                      key={index}
-                    >
-                      {data}
-                    </span>
-                  );
-                })}
-              </div>
-            </div> */}
-            <LinkButton
-              classNameButton="block"
-              href={PROJECTS[targetProject].site}
-              target="_blank"
-            >
-              Consulter le site
-            </LinkButton>
-          </div>
+        <div className="contentModal">
+          <Heading2>{PROJECTS[targetProject].title}</Heading2>
+          <p className="pb-6">{PROJECTS[targetProject].description}</p>
+          <LinkButton
+            classNameButton="block"
+            href={PROJECTS[targetProject].site}
+            target="_blank"
+          >
+            Consulter le site
+          </LinkButton>
         </div>
       </div>
     </div>
