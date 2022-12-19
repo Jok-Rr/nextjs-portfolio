@@ -24,13 +24,15 @@ export const Modal = ({ showModal, targetProject, setShowModal }) => {
         <div className="contentModal">
           <Heading2>{PROJECTS[targetProject].title}</Heading2>
           <p className="pb-6">{PROJECTS[targetProject].description}</p>
-          <LinkButton
-            classNameButton="block"
-            href={PROJECTS[targetProject].site}
-            target="_blank"
-          >
-            Consulter le site
-          </LinkButton>
+          {PROJECTS[targetProject].site && (
+            <LinkButton
+              classNameButton="block"
+              href={PROJECTS[targetProject].site}
+              target="_blank"
+            >
+              Consulter le site
+            </LinkButton>
+          )}
         </div>
       </div>
     </div>
