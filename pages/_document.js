@@ -3,7 +3,7 @@ import Header from "../src/components/Header";
 
 export default function Document() {
   return (
-    <Html className="dark">
+    <Html className="dark overflow-x-hidden">
       <Head>
         <link
           rel="stylesheet"
