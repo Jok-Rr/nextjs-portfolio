@@ -4,6 +4,7 @@ import { Hero } from "../src/components/Hero";
 import { Project } from "../src/components/Project";
 import { Roadmap } from "../src/components/Roadmap";
 import { Skill } from "../src/components/Skill";
+import { Testimonial } from "../src/components/Testimonial";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Skill />
       <Roadmap />
       <Project />
+      <Testimonial />
     </>
   );
 }

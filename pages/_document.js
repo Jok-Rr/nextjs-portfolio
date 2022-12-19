@@ -28,7 +28,7 @@ export default function Document() {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <body className="dark:bg-noblack dark:text-white relative">
+      <body className="dark:bg-noblack dark:text-white relative overflow-x-hidden">
         <Main />
         <NextScript />
       </body>
