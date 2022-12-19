@@ -1,8 +1,8 @@
 import { Container } from "../atom/Container";
 import { FakeButton } from "../atom/FakeButton";
 import { Heading2 } from "../atom/Heading2";
-import { Input } from "../atom/Input";
-import { Textarea } from "../atom/Textarea";
+import { Input } from "./Input";
+import { Textarea } from "./Textarea";
 
 export const Contact = () => {
   return (

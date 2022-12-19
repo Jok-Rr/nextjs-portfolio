@@ -16,8 +16,8 @@ export const Hero = () => {
         className="col-span-4 m-auto drop-shadow-aura"
       />
       <h1 className="col-span-4 my-7">
-        <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-neonblue relative inline-block">
-          <span class="relative text-white">Développeur Web </span>
+        <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-neonblue relative inline-block">
+          <span className="relative text-white">Développeur Web </span>
         </span>
         & Graphiste
       </h1>
@@ -29,8 +29,8 @@ export const Hero = () => {
       </p>
       <div className="col-span-4 mt-5 flex justify-center">
         <LinkButton href="#contact">Me Contacter</LinkButton>
-        <IconGithub style="ml-4" />
-        <IconLinkedin style="ml-4" />
+        <IconGithub className="ml-4" />
+        <IconLinkedin className="ml-4" />
       </div>
     </Container>
   );
