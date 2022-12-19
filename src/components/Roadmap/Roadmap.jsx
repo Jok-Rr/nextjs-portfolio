@@ -11,7 +11,7 @@ import { RoadmapCard } from "./RoadmapCard";
 export const Roadmap = () => {
   return (
     <div className="bg-lightdark">
-      <Container>
+      <Container id="roadmap">
         <Heading2>Mon parcours 🕰</Heading2>
         <VerticalTimeline
           className="col-span-4"

@@ -1,12 +1,9 @@
-export const Input = ({ type, placeholder }) => {
+import { useForm } from "react-hook-form";
+
+export const Input = ({ type, placeholder, name, required = true }) => {
   return (
     <>
-      <label className="hidden">{placeholder}</label>
-      <input
-        type={type}
-        className="bg-lightdark rounded-xl h-12 w-full px-4 focus:border-4 border-neonblue outline-none mb-3"
-        placeholder={placeholder}
-      />
+      <label className="hidden">{name}</label>
     </>
   );
 };

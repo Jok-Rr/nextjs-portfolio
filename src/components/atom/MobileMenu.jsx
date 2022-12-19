@@ -14,12 +14,17 @@ export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
 
   return (
     <div
-      className={`fixed w-full h-screen top-0 left-0 bg-noblack m-auto pt-16 pb-16 flex flex-col items-center justify-between z-20
+      className={`fixed w-full h-screen top-0 left-0 bg-noblack m-auto px-8 py-5 z-20 
       ${isOpenMenu ? "" : "hidden"} `}
     >
-      <Logo width="105" />
-
-      <nav className="gap-12 flex flex-col text-center capitalize">
+      <div className="flex justify-end w-full">
+        <i
+          className="fa-solid fa-xmark text-neonblue text-5xl hover:scale-110"
+          onClick={handleClickMenu}
+        ></i>
+      </div>
+      <nav className="gap-12 flex flex-col text-center capitalize items-center justify-between">
+        <Logo width="105" />
         {navLinks.map(({ id, path, navText }) => {
           return (
             <Link
@@ -40,11 +45,6 @@ export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
           Me contacter
         </Link>
       </nav>
-
-      <i
-        className="fa-solid fa-xmark text-neonblue text-5xl hover:scale-110"
-        onClick={handleClickMenu}
-      ></i>
     </div>
   );
 };
