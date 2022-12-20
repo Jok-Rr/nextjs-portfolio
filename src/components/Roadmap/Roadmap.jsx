@@ -16,7 +16,7 @@ export const Roadmap = () => {
         <VerticalTimeline
           className="col-span-4"
           layout="2-columns"
-          animate={false}
+          animate={true}
         >
           {data.map((data, index) => {
             return (
