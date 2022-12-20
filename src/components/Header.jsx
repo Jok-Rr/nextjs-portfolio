@@ -4,13 +4,25 @@ import { MobileMenu } from "./atom/MobileMenu";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const [scrolling, setScrolling] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.pageYOffset);
+    if (scrollPosition < window.pageYOffset) {
+      setScrollDirection("DOWN");
+    } else {
+      setScrollDirection("UP");
+    }
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScrolling(window.pageYOffset);
-    });
-  }, [scrolling]);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
 
   const handleClickMenu = () => {
     return setIsOpenMenu(!isOpenMenu);
@@ -23,7 +35,7 @@ const Header = () => {
       >
         <Logo width="47" />
       </div>
-      <MobileMenu />
+      <MobileMenu scrollDirection={scrollDirection} />
     </>
   );
 };
