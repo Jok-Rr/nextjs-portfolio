@@ -14,8 +14,8 @@ export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
 
   return (
     <div
-      className={`fixed w-full h-screen top-0 left-0 bg-noblack m-auto px-8 py-5 z-20 
-      ${isOpenMenu ? "" : "hidden"} `}
+      className={`fixed w-full h-screen top-0 left-0 bg-noblack m-auto px-8 py-5 z-20 translate-x-full transition ease-in-out duration-500
+      ${isOpenMenu ? "translate-x-0" : ""} `}
     >
       <div className="flex justify-end w-full">
         <i
