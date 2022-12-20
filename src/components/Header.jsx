@@ -19,21 +19,11 @@ const Header = () => {
   return (
     <>
       <div
-        className={` flex w-full justify-between items-center px-8 py-5 fixed z-10 ${
-          scrolling > 10 && "backdrop-blur"
-        }`}
+        className={`absolute flex w-full justify-between items-center px-8 py-5`}
       >
         <Logo width="47" />
-        <i
-          className="fa-solid fa-bars text-neonblue text-3xl"
-          onClick={handleClickMenu}
-        ></i>
       </div>
-      <MobileMenu
-        isOpenMenu={isOpenMenu}
-        setIsOpenMenu={setIsOpenMenu}
-        handleClickMenu={handleClickMenu}
-      />
+      <MobileMenu />
     </>
   );
 };

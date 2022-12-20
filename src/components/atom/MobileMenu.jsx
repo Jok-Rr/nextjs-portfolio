@@ -14,37 +14,42 @@ export const MobileMenu = ({ isOpenMenu, handleClickMenu, setIsOpenMenu }) => {
 
   return (
     <div
-      className={`fixed w-full h-screen top-0 left-0 bg-noblack m-auto px-8 py-5 z-20 translate-x-full transition ease-in-out duration-500
-      ${isOpenMenu ? "translate-x-0" : ""} `}
+      className={
+        "fixed w-10/12 bg-noblack py-4 px-7 rounded-full bottom-10 left-0 right-0 top-auto mx-auto z-50 border-neonblue border-2"
+      }
     >
-      <div className="flex justify-end w-full">
-        <i
-          className="fa-solid fa-xmark text-neonblue text-5xl hover:scale-110"
-          onClick={handleClickMenu}
-        ></i>
-      </div>
-      <nav className="gap-12 flex flex-col text-center capitalize items-center justify-between">
-        <Logo width="105" />
-        {navLinks.map(({ id, path, navText }) => {
-          return (
-            <Link
-              key={id}
-              href={path}
-              className="text-xl"
-              onClick={() => setIsOpenMenu(!isOpenMenu)}
-            >
-              {navText}
-            </Link>
-          );
-        })}
-        <Link
-          href="#contact"
-          className="bg-neonblue rounded-xl text-xl font-bold py-2.5 px-8"
-          onClick={() => setIsOpenMenu(!isOpenMenu)}
-        >
-          Me contacter
-        </Link>
-      </nav>
+      <ul className="flex justify-between ">
+        <li className="text-xl">
+          <a href="#">
+            <i class="fa-solid fa-house-blank"></i>
+          </a>
+        </li>
+        <li className="text-xl">
+          <a href="#about">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </li>
+        <li className="active text-xl">
+          <a href="#roadmap">
+            <i class="fa-solid fa-road"></i>
+          </a>
+        </li>
+        <li className="active text-xl">
+          <a href="#projects">
+            <i class="fa-solid fa-suitcase"></i>
+          </a>
+        </li>
+        <li className="active text-xl">
+          <a href="#testimonials">
+            <i class="fa-solid fa-star-sharp"></i>
+          </a>
+        </li>
+        <li className="text-xl">
+          <a href="#contact">
+            <i class="fa-solid fa-comment"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

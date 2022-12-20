@@ -5,6 +5,7 @@ import { IconGithub } from "../atom/IconGithub";
 import { IconLinkedin } from "../atom/IconLinkedin";
 import { LinkButton } from "../atom/LinkButton";
 import { Container } from "../atom/Container";
+import { MobileMenu } from "../atom/MobileMenu";
 
 export const Hero = () => {
   return (
