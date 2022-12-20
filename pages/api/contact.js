@@ -17,6 +17,8 @@ export default async function nodeMailer(req, res) {
     html: `
     <div><strong>Name:</strong> ${req.body.fullName}</div>
     <br/>
+    <div><strong>Name:</strong> ${req.body.subject}</div>
+    <br/>
     <div><strong>Email:</strong> ${req.body.email}</div>
     <br/>
     <div><strong>Message:</strong> ${req.body.message}</div>`,
