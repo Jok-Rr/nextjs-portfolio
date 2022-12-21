@@ -16,7 +16,7 @@ export const About = () => {
           className="drop-shadow-aura m-auto col-span-4 mb-6 lg:w-[70%]"
         />
         <div className={"col-span-4 lg:col-span-6 lg:text-left"}>
-          <Heading2>A propos de moi 📖</Heading2>
+          <Heading2 className={"hidden lg:block"}>A propos de moi 📖</Heading2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
             eros nisl. Curabitur non urna hendrerit, consequat massa non,
