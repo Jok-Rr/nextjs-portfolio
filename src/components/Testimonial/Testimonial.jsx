@@ -15,12 +15,14 @@ export const Testimonial = () => {
   return (
     <div className="bg-lightdark">
       <Container id="testimonials">
-        <Heading2 className={"col-span-4"}>Témoignages 🗣</Heading2>
+        <Heading2 className={"col-span-4 lg:col-span-12"}>
+          Témoignages 🗣
+        </Heading2>
         <Swiper
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="mySwiper col-span-4 "
+          className="mySwiper col-span-4 lg:col-span-8 lg:col-start-3"
         >
           <SwiperSlide className="bg-noblack flex-col flex items-center justify-center rounded-2xl py-12 px-6">
             <Image

@@ -3,7 +3,7 @@ import { useState } from "react";
 export const ProjectCard = ({ imageUrl, onClick, indexKey }) => {
   return (
     <div
-      className="col-span-2 bg-white text-noblack rounded-2xl overflow-hidden flex justify-center hover:scale-105 p-5 h-36"
+      className="col-span-2 bg-white text-noblack rounded-2xl overflow-hidden flex justify-center hover:scale-105 p-5 h-36 lg:col-span-4"
       id={indexKey}
       onClick={onClick}
     >

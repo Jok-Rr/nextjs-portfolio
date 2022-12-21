@@ -37,7 +37,9 @@ export const Project = () => {
 
   return (
     <Container id="projects">
-      <Heading2 className={"col-span-4"}>Mes projets 🖼️</Heading2>
+      <Heading2 className={"col-span-4 lg:col-span-12 lg:justify-self-start"}>
+        Mes projets 🖼️
+      </Heading2>
       {PROJECTS.filter((data, idx) => idx < showMore.length).map(
         (data, index) => {
           return (
@@ -52,7 +54,7 @@ export const Project = () => {
         }
       )}
       {PROJECTS.length > 6 && (
-        <div className="col-span-4">
+        <div className="col-span-4 lg:col-span-12">
           <FakeButton
             classNameButton="mt-9"
             onClick={handleClickMore}

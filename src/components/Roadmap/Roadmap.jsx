@@ -12,7 +12,7 @@ export const Roadmap = () => {
   return (
     <div className="bg-lightdark">
       <Container id="roadmap">
-        <Heading2 className={"col-span-4 lg:col-span-12"}>
+        <Heading2 className={"col-span-4 lg:col-span-12 lg:justify-self-start"}>
           Mon parcours 🕰
         </Heading2>
         <VerticalTimeline
