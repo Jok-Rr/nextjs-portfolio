@@ -5,20 +5,26 @@ import memoji from "/public/images/memoji.png";
 
 export const About = () => {
   return (
-    <div id="about" className="bg-lightdark ">
-      <Container>
-        <Heading2>A propos de moi 📖</Heading2>
+    <div id="about" className="bg-lightdark">
+      <Container className={"lg:items-center"}>
+        <Heading2 className={"col-span-4 lg:hidden"}>
+          A propos de moi 📖
+        </Heading2>
         <Image
           src={memoji}
           alt="Test"
-          className="drop-shadow-aura m-auto col-span-4 mb-6"
+          className="drop-shadow-aura m-auto col-span-4 mb-6 lg:w-[70%]"
         />
-        <p className="col-span-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
-          eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium
-          metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem,
-          sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.
-        </p>
+        <div className={"col-span-4 lg:col-span-6 lg:text-left"}>
+          <Heading2>A propos de moi 📖</Heading2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
+            eros nisl. Curabitur non urna hendrerit, consequat massa non,
+            pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus
+            lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis
+            interdum.
+          </p>
+        </div>
       </Container>
     </div>
   );

@@ -22,7 +22,9 @@ export const Modal = ({ showModal, targetProject, setShowModal }) => {
           ></i>
         </div>
         <div className="contentModal">
-          <Heading2>{PROJECTS[targetProject].title}</Heading2>
+          <Heading2 className={"col-span-4"}>
+            {PROJECTS[targetProject].title}
+          </Heading2>
           <p className="pb-6">{PROJECTS[targetProject].description}</p>
           {PROJECTS[targetProject].site && (
             <LinkButton

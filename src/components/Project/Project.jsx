@@ -37,7 +37,7 @@ export const Project = () => {
 
   return (
     <Container id="projects">
-      <Heading2>Mes projets 🖼️</Heading2>
+      <Heading2 className={"col-span-4"}>Mes projets 🖼️</Heading2>
       {PROJECTS.filter((data, idx) => idx < showMore.length).map(
         (data, index) => {
           return (

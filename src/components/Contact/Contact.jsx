@@ -36,7 +36,7 @@ export const Contact = () => {
 
   return (
     <Container id="contact">
-      <Heading2>
+      <Heading2 className={"col-span-4"}>
         Un projet ? <br />
         Contactez-moi 👾
       </Heading2>

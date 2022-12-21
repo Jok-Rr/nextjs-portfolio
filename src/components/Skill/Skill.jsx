@@ -6,7 +6,9 @@ import { IMAGES } from "/public/skills/index.js";
 export const Skill = () => {
   return (
     <Container id="skills">
-      <Heading2>Les techno & outils que j’utilise 🧰</Heading2>
+      <Heading2 className={"col-span-4"}>
+        Les techno & outils que j’utilise 🧰
+      </Heading2>
       <div className="flex lex-wrap col-span-4 items-center flex-wrap justify-center">
         {IMAGES.map((e, index) => {
           return (

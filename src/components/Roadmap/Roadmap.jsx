@@ -12,7 +12,7 @@ export const Roadmap = () => {
   return (
     <div className="bg-lightdark">
       <Container id="roadmap">
-        <Heading2>Mon parcours 🕰</Heading2>
+        <Heading2 className={"col-span-4"}>Mon parcours 🕰</Heading2>
         <VerticalTimeline
           className="col-span-4"
           layout="2-columns"

@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`absolute flex w-full justify-between items-center px-8 py-5`}
+        className={`absolute flex w-full justify-between items-center py-5 mx-8 md:mx-20`}
       >
         <Logo width="47" />
       </div>

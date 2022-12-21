@@ -15,7 +15,7 @@ export const Testimonial = () => {
   return (
     <div className="bg-lightdark">
       <Container id="testimonials">
-        <Heading2>Témoignages 🗣</Heading2>
+        <Heading2 className={"col-span-4"}>Témoignages 🗣</Heading2>
         <Swiper
           effect={"cards"}
           grabCursor={true}
