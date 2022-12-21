@@ -7,16 +7,15 @@ const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [scrollDirection, setScrollDirection] = useState(0);
 
-  const handleScroll = () => {
-    setScrollPosition(window.pageYOffset);
-    if (scrollPosition < window.pageYOffset) {
-      setScrollDirection("DOWN");
-    } else {
-      setScrollDirection("UP");
-    }
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.pageYOffset);
+      if (scrollPosition < window.pageYOffset) {
+        setScrollDirection("DOWN");
+      } else {
+        setScrollDirection("UP");
+      }
+    };
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {

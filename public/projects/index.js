@@ -42,4 +42,18 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://orphanet.site/france",
   },
+  {
+    logo: require("../projects/orphanet.png").default,
+    title: "Orphanet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
+    site: "https://orphanet.site/france",
+  },
+  {
+    logo: require("../projects/orphanet.png").default,
+    title: "Orphanet",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
+    site: "https://orphanet.site/france",
+  },
 ];
