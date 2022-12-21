@@ -59,3 +59,11 @@ h4 {
   width: 100%;
   height: auto;
 }
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns
+    .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    text-align: left;
+  }
+}

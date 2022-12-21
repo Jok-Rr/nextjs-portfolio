@@ -7,19 +7,24 @@ import { IconLinkedin } from "./atom/IconLinkedin";
 
 export const Footer = () => {
   return (
-    <Container>
-      <figure className="col-span-4 m-auto">
+    <Container className={"lg:text-left"}>
+      <figure className="col-span-4 m-auto lg:hidden">
         <Logo width={70} />
       </figure>
-      <div className="col-span-4 m-auto font-bold">
+      <div className="col-span-4 m-auto font-bold lg:col-span-5 lg:m-0">
         <p className="mb-2">
           © tom.com 2022. <br />
           Tous droits réservés.
         </p>
         <Link href="">Mentions Légales</Link>
       </div>
-      <IconGithub className="col-span-1 col-start-2 justify-end" />
-      <IconLinkedin className="col-span-1" />
+      <figure className="col-span-2 m-auto hidden lg:block">
+        <Logo width={70} />
+      </figure>
+      <div className="col-span-4 flex justify-center lg:col-span-5 lg:justify-end">
+        <IconGithub className="mx-1" />
+        <IconLinkedin className="mx-1" />
+      </div>
     </Container>
   );
 };

@@ -2,7 +2,7 @@ export const Textarea = ({ placeholder }) => {
   return (
     <textarea
       style={{ resize: "none" }}
-      className="bg-lightdark rounded-xl h-36 w-full p-4 focus:border-4 border-neonblue outline-none mb-3"
+      className="mb-3 h-36 w-full rounded-xl border-neonblue bg-lightdark p-4 outline-none focus:border-4"
       placeholder={placeholder}
     />
   );

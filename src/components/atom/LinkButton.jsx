@@ -9,7 +9,7 @@ export const LinkButton = ({
   return (
     <Link
       href={href}
-      className={`bg-neonblue rounded-xl text-xl font-semibold py-2.5 px-8 ${classNameButton}`}
+      className={`rounded-xl bg-neonblue py-2.5 px-8 text-xl font-semibold ${classNameButton}`}
       target={target}
     >
       {children}

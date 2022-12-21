@@ -1,7 +1,7 @@
 export const Container = ({ children, id, className }) => {
   return (
     <div
-      className={`grid grid-cols-4 gap-4 mx-8 py-12 text-center m-auto ${className} lg:grid-cols-12 lg:mx-20`}
+      className={`m-auto mx-8 grid grid-cols-4 gap-5 py-12 text-center ${className} lg:mx-20 lg:grid-cols-12 xl:mx-48 xl:py-28 2xl:m-auto 2xl:w-1/2`}
       id={id}
     >
       {children}

@@ -1,3 +1,4 @@
+import { Container } from "postcss";
 import { useEffect, useState } from "react";
 import { Logo } from "./atom/Logo";
 import { MobileMenu } from "./atom/MobileMenu";
@@ -30,7 +31,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`absolute flex w-full justify-between items-center py-5 mx-8 md:mx-20`}
+        className={`absolute left-0 right-0 mx-8 flex w-full items-center justify-between py-5 lg:mx-20 xl:mx-48 2xl:m-auto 2xl:w-1/2`}
       >
         <Logo width="47" />
       </div>

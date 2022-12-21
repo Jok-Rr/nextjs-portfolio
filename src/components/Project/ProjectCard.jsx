@@ -3,11 +3,11 @@ import { useState } from "react";
 export const ProjectCard = ({ imageUrl, onClick, indexKey }) => {
   return (
     <div
-      className="col-span-2 bg-white text-noblack rounded-2xl overflow-hidden flex justify-center hover:scale-105 p-5 h-36 lg:col-span-4"
+      className="col-span-2 flex h-36 cursor-zoom-in justify-center overflow-hidden rounded-2xl bg-white p-5 text-noblack transition-transform duration-300 ease-in-out hover:scale-105 lg:col-span-4"
       id={indexKey}
       onClick={onClick}
     >
-      <img src={imageUrl} className="object-contain w-5/6" alt="" />
+      <img src={imageUrl} className="w-5/6 object-contain" alt="" />
     </div>
   );
 };

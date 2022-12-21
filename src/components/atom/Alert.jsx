@@ -6,7 +6,7 @@ export const Alert = ({ errors, type, message = null }) => {
     switch (type) {
       case "error":
         return (
-          <div className={`rounded-xl bg-red-50 p-4 text-left mb-4`}>
+          <div className={`mb-4 rounded-xl bg-red-50 p-4 text-left`}>
             <div className="flex">
               <div className="flex-shrink-0">
                 {" "}
@@ -25,7 +25,7 @@ export const Alert = ({ errors, type, message = null }) => {
         );
       case "sucess":
         return (
-          <div className={`rounded-xl bg-green-50 p-4 text-left mb-4`}>
+          <div className={`mb-4 rounded-xl bg-green-50 p-4 text-left`}>
             <div className="flex">
               <div className="flex-shrink-0">
                 <ShieldCheckIcon

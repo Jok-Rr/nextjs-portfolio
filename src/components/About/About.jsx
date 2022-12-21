@@ -13,7 +13,7 @@ export const About = () => {
         <Image
           src={memoji}
           alt="Test"
-          className="drop-shadow-aura m-auto col-span-4 mb-6 lg:w-[70%]"
+          className="col-span-4 m-auto mb-6 drop-shadow-aura lg:w-44 xl:w-52"
         />
         <div className={"col-span-4 lg:col-span-6 lg:text-left"}>
           <Heading2 className={"hidden lg:block"}>A propos de moi 📖</Heading2>

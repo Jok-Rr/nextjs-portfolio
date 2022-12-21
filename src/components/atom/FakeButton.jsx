@@ -1,7 +1,7 @@
 export const FakeButton = ({ children, classNameButton, data, onClick }) => {
   return (
     <button
-      className={`bg-neonblue rounded-xl text-xl font-semibold py-2.5 px-8 ${classNameButton}`}
+      className={`rounded-xl bg-neonblue py-2.5 px-8 text-xl font-semibold transition-transform duration-300 ease-in-out hover:scale-105 ${classNameButton}`}
       onClick={onClick}
     >
       {children}

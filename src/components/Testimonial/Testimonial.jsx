@@ -24,13 +24,13 @@ export const Testimonial = () => {
           modules={[EffectCards]}
           className="mySwiper col-span-4 lg:col-span-8 lg:col-start-3"
         >
-          <SwiperSlide className="bg-noblack flex-col flex items-center justify-center rounded-2xl py-12 px-6">
+          <SwiperSlide className="flex flex-col items-center justify-center rounded-2xl bg-noblack py-12 px-6">
             <Image
               src={me}
               width="144"
               height="144"
               alt=""
-              className="border-8 rounded-full border-neonblue mb-5"
+              className="mb-5 rounded-full border-8 border-neonblue"
             />
             <Heading3>Thomas Florentin</Heading3>
             <Heading4>Développeur Web</Heading4>
@@ -39,13 +39,13 @@ export const Testimonial = () => {
               nec eros nisl. Curabitur non urna hendrerit, consequat massa non.
             </p>
           </SwiperSlide>
-          <SwiperSlide className="bg-noblack flex-col flex items-center justify-center rounded-2xl py-12 px-6">
+          <SwiperSlide className="flex flex-col items-center justify-center rounded-2xl bg-noblack py-12 px-6">
             <Image
               src={me}
               width="144"
               height="144"
               alt=""
-              className="border-8 rounded-full border-neonblue mb-5"
+              className="mb-5 rounded-full border-8 border-neonblue"
             />
             <Heading3>Thomas Florentin</Heading3>
             <Heading4>Développeur Web</Heading4>
@@ -54,13 +54,13 @@ export const Testimonial = () => {
               nec eros nisl. Curabitur non urna hendrerit, consequat massa non.
             </p>
           </SwiperSlide>
-          <SwiperSlide className="bg-noblack flex-col flex items-center justify-center rounded-2xl py-12 px-6">
+          <SwiperSlide className="flex flex-col items-center justify-center rounded-2xl bg-noblack py-12 px-6">
             <Image
               src={me}
               width="144"
               height="144"
               alt=""
-              className="border-8 rounded-full border-neonblue mb-5"
+              className="mb-5 rounded-full border-8 border-neonblue"
             />
             <Heading3>Thomas Florentin</Heading3>
             <Heading4>Développeur Web</Heading4>

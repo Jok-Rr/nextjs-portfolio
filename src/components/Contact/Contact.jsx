@@ -2,6 +2,8 @@ import { Container } from "../atom/Container";
 import { Heading2 } from "../atom/Heading2";
 import { useForm } from "react-hook-form";
 import { Alert } from "../atom/Alert";
+import illustrationContact from "/public/vectors/contact.svg";
+import Image from "next/image";
 
 export const Contact = () => {
   const {
@@ -36,16 +38,15 @@ export const Contact = () => {
 
   return (
     <Container id="contact">
-      <Heading2 className={"col-span-4"}>
-        Un projet ? <br />
-        Contactez-moi 👾
-      </Heading2>
-      <p className="col-span-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
-        eros nisl. Curabitur non urna hendrerit, consequat massa non.
-      </p>
+      <div className="col-span-4 lg:col-span-8 lg:text-left">
+        <Heading2>Un projet ? Contactez-moi 👾</Heading2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
+          eros nisl. Curabitur non urna hendrerit, consequat massa non.
+        </p>
+      </div>
       <form
-        className="col-span-4"
+        className="col-span-4 lg:col-span-8 lg:text-left"
         method="POST"
         onSubmit={handleSubmit(onSubmit)}
       >
@@ -54,8 +55,8 @@ export const Contact = () => {
           name="fullName"
           id="fullName"
           autoComplete="name"
-          className={`bg-lightdark rounded-xl h-12 w-full px-4 focus:border-4  outline-none mb-3 transition-colors ${
-            errors.fullName ? "border-red-400 border-4" : "border-neonblue"
+          className={`mb-3  h-12 w-full rounded-xl bg-lightdark px-4 outline-none transition-colors focus:border-4 ${
+            errors.fullName ? "border-4 border-red-400" : "border-neonblue"
           }`}
           placeholder={"Nom & Prénom"}
           {...register("fullName", {
@@ -80,8 +81,8 @@ export const Contact = () => {
           name="subject"
           id="subject"
           autoComplete="sujet"
-          className={`bg-lightdark rounded-xl h-12 w-full px-4 focus:border-4  outline-none mb-3 transition-colors ${
-            errors.subject ? "border-red-400 border-4" : "border-neonblue"
+          className={`mb-3 h-12 w-full rounded-xl bg-lightdark px-4  outline-none transition-colors focus:border-4 ${
+            errors.subject ? "border-4 border-red-400" : "border-neonblue"
           }`}
           placeholder={"Sujet"}
           {...register("subject", {
@@ -101,8 +102,8 @@ export const Contact = () => {
           name="email"
           id="email"
           autoComplete="email"
-          className={`bg-lightdark rounded-xl h-12 w-full px-4 focus:border-4  outline-none mb-3 transition-colors ${
-            errors.email ? "border-red-400 border-4" : "border-neonblue"
+          className={`mb-3 h-12 w-full rounded-xl bg-lightdark px-4  outline-none transition-colors focus:border-4 ${
+            errors.email ? "border-4 border-red-400" : "border-neonblue"
           }`}
           placeholder={"Email"}
           {...register("email", {
@@ -124,8 +125,8 @@ export const Contact = () => {
           rows="4"
           placeholder="Message"
           style={{ resize: "none" }}
-          className={`bg-lightdark rounded-xl h-36 w-full p-4 focus:border-4 outline-none mb-3 ${
-            errors.message ? "border-red-400 border-4" : "border-neonblue"
+          className={`mb-3 h-36 w-full rounded-xl bg-lightdark p-4 outline-none focus:border-4 ${
+            errors.message ? "border-4 border-red-400" : "border-neonblue"
           }`}
           defaultValue={""}
           {...register("message", {
@@ -148,11 +149,18 @@ export const Contact = () => {
 
         <button
           type="submit"
-          className="bg-neonblue rounded-xl text-xl font-semibold py-2.5 px-8"
+          className="rounded-xl bg-neonblue py-2.5 px-8 text-xl font-semibold transition-transform duration-300 ease-in-out hover:scale-105"
         >
           Envoyer mon message
         </button>
       </form>
+      <div className="hidden lg:relative lg:col-span-4 lg:block">
+        <Image
+          src={illustrationContact}
+          alt="logo-tb"
+          className="lg:absolute lg:-right-7 lg:top-0 lg:max-w-xs"
+        ></Image>
+      </div>
     </Container>
   );
 };
