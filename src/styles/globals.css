@@ -67,3 +67,7 @@ h4 {
     text-align: left;
   }
 }
+
+.swiper-pagination-bullet-active {
+  background: #3342e8 !important;
+}

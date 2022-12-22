@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { Container } from "postcss";
 import { useEffect, useState } from "react";
+import { LinkButton } from "./atom/LinkButton";
 import { Logo } from "./atom/Logo";
 import { MobileMenu } from "./atom/MobileMenu";
 
@@ -31,9 +33,32 @@ const Header = () => {
   return (
     <>
       <div
-        className={`absolute left-0 right-0 mx-8 flex w-full items-center justify-between py-5 lg:mx-20 xl:mx-48 2xl:m-auto 2xl:w-1/2`}
+        className={`left-0 right-0 z-50 flex items-center justify-between px-8 py-5 transition-colors delay-150 lg:fixed lg:px-20 xl:px-48 2xl:px-[30%] ${
+          scrollPosition > 0 &&
+          "lg:bg-noblack lg:bg-opacity-70 lg:backdrop-blur-md"
+        }`}
       >
         <Logo width="47" />
+        <nav className="hidden font-semibold capitalize lg:block">
+          <Link href={"#"} className={"ml-5"}>
+            Home
+          </Link>
+          <Link href={"#"} className={"ml-5"}>
+            Moi
+          </Link>
+          <Link href={"#"} className={"ml-5"}>
+            Parcours
+          </Link>
+          <Link href={"#"} className={"ml-5"}>
+            Projets
+          </Link>
+          <Link href={"#"} className={"ml-5"}>
+            Témoignages
+          </Link>
+          <LinkButton href="#contact" classNameButton={"ml-5"}>
+            Contact
+          </LinkButton>
+        </nav>
       </div>
       <MobileMenu scrollDirection={scrollDirection} />
     </>

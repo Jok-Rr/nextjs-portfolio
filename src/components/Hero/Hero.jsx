@@ -8,12 +8,15 @@ import { Container } from "../atom/Container";
 
 export const Hero = () => {
   return (
-    <Container id={"#"} className={"lg:pt-24 2xl:pt-44"}>
+    <Container
+      id={"#"}
+      className={"-mt-20 lg:mt-0 lg:pt-32 xl:pt-32 2xl:pt-44"}
+    >
       <Image
         src={me}
         alt="Me"
         priority="false"
-        className="col-span-4 m-auto drop-shadow-aura lg:hidden"
+        className="col-span-4 m-auto w-3/4 drop-shadow-aura md:w-1/2 lg:hidden"
       />
       <div className="col-span-4 lg:col-span-7 lg:text-left">
         <h1 className="my-7">
@@ -39,7 +42,7 @@ export const Hero = () => {
           src={me}
           alt="Me"
           priority="false"
-          className="absolute -bottom-[48px] right-0 w-80 drop-shadow-aura xl:-bottom-[112px] xl:w-96"
+          className="absolute -bottom-[48px] right-0 w-80 drop-shadow-aura xl:-bottom-[112px]"
         />
       </div>
     </Container>
