@@ -5,8 +5,8 @@ export default async function nodeMailer(req, res) {
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASSWORD_EMAIL,
+      user: process.env.NEXT_PUBLIC_EMAIL,
+      pass: process.env.NEXT_PUBLIC_PASSWORD_EMAIL,
     },
     secure: true,
   });
