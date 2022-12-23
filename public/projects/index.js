@@ -67,4 +67,34 @@ export const PROJECTS = [
     tags: ["", "", ""],
     private: true,
   },
+  {
+    logo: require("../projects/chatbot.png").default,
+    title: "Samois sur Seine",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
+    site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
+    year: "2022",
+    tags: ["", "", ""],
+    private: true,
+  },
+  {
+    logo: require("../projects/avantseine.png").default,
+    title: "L'avant Seine",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
+    site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
+    year: "2022",
+    tags: ["", "", ""],
+    private: true,
+  },
+  {
+    logo: require("../projects/mep.png").default,
+    title: "La MEP",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
+    site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
+    year: "2022",
+    tags: ["", "", ""],
+    private: true,
+  },
 ];

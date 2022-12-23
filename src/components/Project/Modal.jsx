@@ -6,12 +6,12 @@ import { PROJECTS } from "/public/projects/index";
 export const Modal = ({ showModal, targetProject, setShowModal }) => {
   return (
     <div
-      className={`fixed  top-0 left-0 z-30 h-full w-full bg-lightdark/[1] ${
+      className={`fixed top-0 left-0 z-50 flex h-full w-full items-center justify-center bg-lightdark/[0.95] ${
         !showModal ? "hidden" : ""
       }`}
     >
       <div
-        className={`fixed top-0 bottom-0 right-0 left-0 z-30 m-auto h-fit w-11/12 rounded-xl bg-noblack p-7 drop-shadow-aura md:h-fit lg:w-1/2 lg:p-14`}
+        className={`relative w-11/12 rounded-xl bg-noblack p-7 drop-shadow-aura md:h-fit lg:w-1/2 lg:p-14`}
       >
         <i
           className="fa-solid fa-xmark absolute right-6 top-4 cursor-pointer text-3xl"
