@@ -46,7 +46,7 @@ export const Project = () => {
             <ProjectCard
               key={index}
               imageUrl={data.logo.src}
-              title={data.title}
+              data={data}
               indexKey={index}
               onClick={handleClickCard}
             />

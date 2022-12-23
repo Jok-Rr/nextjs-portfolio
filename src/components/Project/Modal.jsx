@@ -11,17 +11,16 @@ export const Modal = ({ showModal, targetProject, setShowModal }) => {
       }`}
     >
       <div
-        className={`fixed top-0 bottom-0 right-0 left-0 z-30 m-auto h-fit w-11/12 rounded-xl bg-noblack p-7 drop-shadow-aura`}
+        className={`fixed top-0 bottom-0 right-0 left-0 z-30 m-auto h-fit w-11/12 rounded-xl bg-noblack p-7 drop-shadow-aura md:h-fit lg:w-1/2 lg:p-14`}
       >
-        <div className="headerModal flex justify-end text-3xl">
-          <i
-            className="fa-solid fa-xmark"
-            onClick={() => {
-              setShowModal(!showModal);
-            }}
-          ></i>
-        </div>
-        <div className="contentModal">
+        <i
+          className="fa-solid fa-xmark absolute right-6 top-4 cursor-pointer text-3xl"
+          onClick={() => {
+            setShowModal(!showModal);
+          }}
+        ></i>
+
+        <div className="contentModal flex h-full flex-col justify-evenly">
           <Heading2 className={"col-span-4"}>
             {PROJECTS[targetProject].title}
           </Heading2>

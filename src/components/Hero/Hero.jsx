@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <Container
       id={"#"}
-      className={"-mt-20 lg:mt-0 lg:pt-32 xl:pt-32 2xl:pt-44"}
+      className={"-mt-20 lg:mt-0 lg:pt-36 xl:pt-32 2xl:pt-44"}
     >
       <Image
         src={me}
@@ -42,7 +42,7 @@ export const Hero = () => {
           src={me}
           alt="Me"
           priority="false"
-          className="absolute -bottom-[48px] right-0 w-80 drop-shadow-aura xl:-bottom-[112px]"
+          className="absolute -bottom-[48px] right-0 w-80 drop-shadow-aura lg:w-72 xl:-bottom-[112px] xl:w-80"
         />
       </div>
     </Container>

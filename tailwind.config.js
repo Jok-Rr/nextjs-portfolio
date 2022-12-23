@@ -14,6 +14,9 @@ module.exports = {
       dropShadow: {
         aura: "0px 0px 50px rgba(255, 255, 255, 0.2)",
       },
+      transitionDelay: {
+        450: "450ms",
+      },
     },
   },
   plugins: [],
