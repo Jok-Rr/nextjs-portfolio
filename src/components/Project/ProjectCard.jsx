@@ -13,7 +13,7 @@ export const ProjectCard = ({ imageUrl, onClick, indexKey, data }) => {
         className="w-full object-cover transition duration-300 ease-in-out lg:group-hover/card:scale-125"
         alt=""
       />
-      <div className="absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center rounded-2xl text-noblack opacity-0 backdrop-blur-xl transition duration-300 ease-in-out lg:group-hover/card:opacity-100">
+      <div className="hidden lg:absolute lg:top-0 lg:left-0 lg:flex lg:h-full lg:w-full lg:flex-col lg:items-center lg:justify-center lg:text-noblack lg:opacity-0 lg:backdrop-blur-xl lg:transition lg:duration-300 lg:ease-in-out lg:group-hover/card:opacity-100">
         <Heading4>{data.title}</Heading4>
         <FakeButton classNameButton={"text-white"}>
           Voir <i class="fa-solid fa-eye"></i>
