@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { LinkButton } from "./atom/LinkButton";
 import { Logo } from "./atom/Logo";
@@ -12,7 +11,9 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.pageYOffset);
-      if (scrollPosition < window.pageYOffset) {
+      if (scrollPosition + 1 === window.pageYOffset) {
+        setScrollDirection("UP");
+      } else if (scrollPosition < window.pageYOffset) {
         setScrollDirection("DOWN");
       } else {
         setScrollDirection("UP");

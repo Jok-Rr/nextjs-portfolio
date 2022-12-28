@@ -1,6 +1,5 @@
 import { LinkButton } from "../atom/LinkButton";
 import { Heading2 } from "../atom/Heading2";
-import { Heading3 } from "../atom/Heading3";
 import { PROJECTS } from "/public/projects/index";
 
 export const Modal = ({ showModal, targetProject, setShowModal }) => {

@@ -4,7 +4,7 @@ import { Heading4 } from "../atom/Heading4";
 export const ProjectCard = ({ imageUrl, onClick, indexKey, data }) => {
   return (
     <div
-      className="group/card relative col-span-2 flex h-32 cursor-pointer overflow-hidden rounded-2xl lg:col-span-4 lg:h-56"
+      className="group/card relative isolate col-span-2 flex h-32 cursor-pointer overflow-hidden rounded-2xl lg:col-span-4 lg:h-56"
       id={indexKey}
       onClick={onClick}
     >
