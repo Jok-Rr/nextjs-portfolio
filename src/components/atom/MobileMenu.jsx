@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 export const MobileMenu = ({ scrollDirection }) => {
   return (
     <div
-      className={`fixed bottom-3 left-0 right-0 top-auto z-50 mx-auto w-10/12 rounded-full border-2 border-neonblue bg-noblack py-4 px-7 transition delay-200 ease-in lg:hidden ${
+      className={`fixed bottom-7 left-0 right-0 top-auto z-50 mx-auto w-10/12 rounded-full border-2 border-neonblue bg-noblack py-4 px-7 transition delay-200 ease-in lg:hidden ${
         scrollDirection === "DOWN" ? "translate-y-28" : "translate-y-0"
       } `}
     >
