@@ -14,8 +14,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["React", "NextJS", "TailwindCSS"],
   },
   {
     logo: require("../projects/lr.png").default,
@@ -24,8 +23,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["WordPress", "Elementor", "Stripe"],
   },
   {
     logo: require("../projects/gc.png").default,
@@ -34,8 +32,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["WordPress", "Elementor"],
   },
   {
     logo: require("../projects/orphanet.png").default,
@@ -44,8 +41,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["Sass", "Grav CMS"],
   },
   {
     logo: require("../projects/ab.png").default,
@@ -54,8 +50,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["Wordpress", "Sass", "WooCommerce"],
   },
   {
     logo: require("../projects/samois.png").default,
@@ -64,18 +59,16 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["Sass", "WordPress"],
   },
   {
     logo: require("../projects/chatbot.png").default,
-    title: "Samois sur Seine",
+    title: "Chatbot.io",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["Javascript", "Sass"],
   },
   {
     logo: require("../projects/avantseine.png").default,
@@ -84,8 +77,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["WordPress", "Sass"],
   },
   {
     logo: require("../projects/mep.png").default,
@@ -94,7 +86,6 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
-    tags: ["", "", ""],
-    private: true,
+    tags: ["Html", "Css"],
   },
 ];

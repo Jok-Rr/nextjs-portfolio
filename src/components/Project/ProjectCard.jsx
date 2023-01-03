@@ -16,7 +16,7 @@ export const ProjectCard = ({ imageUrl, onClick, indexKey, data }) => {
       <div className="hidden lg:absolute lg:top-0 lg:left-0 lg:flex lg:h-full lg:w-full lg:flex-col lg:items-center lg:justify-center lg:text-noblack lg:opacity-0 lg:backdrop-blur-xl lg:transition lg:duration-300 lg:ease-in-out lg:group-hover/card:opacity-100">
         <Heading4>{data.title}</Heading4>
         <FakeButton classNameButton={"text-white"}>
-          Voir <i class="fa-solid fa-eye"></i>
+          Voir <i className="fa-solid fa-eye"></i>
         </FakeButton>
       </div>
     </div>

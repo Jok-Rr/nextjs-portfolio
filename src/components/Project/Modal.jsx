@@ -1,5 +1,6 @@
 import { LinkButton } from "../atom/LinkButton";
 import { Heading2 } from "../atom/Heading2";
+import { Heading3 } from "../atom/Heading3";
 import { PROJECTS } from "/public/projects/index";
 
 export const Modal = ({ showModal, targetProject, setShowModal }) => {
@@ -24,6 +25,18 @@ export const Modal = ({ showModal, targetProject, setShowModal }) => {
             {PROJECTS[targetProject].title}
           </Heading2>
           <p className="pb-6">{PROJECTS[targetProject].description}</p>
+          {PROJECTS[targetProject].tags !== "" && (
+            <ul className="flex justify-center pb-6">
+              {PROJECTS[targetProject].tags.map((data, index) => (
+                <li
+                  key={index}
+                  className="mx-2 rounded-xl bg-lightdark py-1 px-3 font-medium "
+                >
+                  {data}
+                </li>
+              ))}
+            </ul>
+          )}
           {PROJECTS[targetProject].site && (
             <LinkButton
               classNameButton="block"
