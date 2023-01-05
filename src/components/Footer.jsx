@@ -1,4 +1,3 @@
-import logo from "/public/vectors/logo-tb.svg";
 import { Container } from "./atom/Container";
 import { Logo } from "./atom/Logo";
 import Link from "next/link";

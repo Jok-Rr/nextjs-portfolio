@@ -7,32 +7,32 @@ export const MobileMenu = ({ scrollDirection }) => {
     >
       <ul className="flex justify-between ">
         <li className="text-xl">
-          <a href="/#">
+          <a href={"/#"}>
             <i className="fa-solid fa-house-blank"></i>
           </a>
         </li>
         <li className="text-xl active:text-neonblue">
-          <a href="/#about">
+          <a href={"/#about"}>
             <i className="fa-solid fa-user"></i>
           </a>
         </li>
         <li className="active text-xl">
-          <a href="/#roadmap">
+          <a href={"/#roadmap"}>
             <i className="fa-solid fa-road"></i>
           </a>
         </li>
         <li className="active text-xl">
-          <a href="/#projects">
+          <a href={"/#projects"}>
             <i className="fa-solid fa-suitcase"></i>
           </a>
         </li>
         <li className="active text-xl">
-          <a href="/#testimonials">
+          <a href={"/#testimonials"}>
             <i className="fa-solid fa-star-sharp"></i>
           </a>
         </li>
         <li className="text-xl">
-          <a href="/#contact">
+          <a href={"/#contact"}>
             <i className="fa-solid fa-comment"></i>
           </a>
         </li>

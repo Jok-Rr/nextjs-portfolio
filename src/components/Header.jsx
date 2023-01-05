@@ -38,7 +38,7 @@ const Header = () => {
           "lg:bg-noblack lg:bg-opacity-70 lg:backdrop-blur-md"
         }`}
       >
-        <a href="#">
+        <a href={"/#"}>
           <Logo width="47" />
         </a>
         <nav className="hidden font-semibold capitalize lg:block">
