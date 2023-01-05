@@ -42,19 +42,19 @@ const Header = () => {
           <Logo width="47" />
         </a>
         <nav className="hidden font-semibold capitalize lg:block">
-          <a href={"#"} className={"ml-5"}>
-            Home
+          <a href={"/#"} className={"ml-5"}>
+            Accueil
           </a>
-          <a href={"#about"} className={"ml-5"}>
+          <a href={"/#about"} className={"ml-5"}>
             Moi
           </a>
-          <a href={"#roadmap"} className={"ml-5"}>
+          <a href={"/#roadmap"} className={"ml-5"}>
             Parcours
           </a>
-          <a href={"#projects"} className={"ml-5"}>
+          <a href={"/#projects"} className={"ml-5"}>
             Projets
           </a>
-          <a href={"#testimonials"} className={"ml-5"}>
+          <a href={"/#testimonials"} className={"ml-5"}>
             Témoignages
           </a>
           <LinkButton href="#contact" classNameButton={"ml-5"}>
