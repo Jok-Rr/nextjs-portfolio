@@ -18,13 +18,12 @@ export const About = () => {
         <div className={"col-span-4 lg:col-span-6 lg:text-left"}>
           <Heading2 className={"hidden lg:block"}>A propos de moi 📖</Heading2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
-            eros nisl. Curabitur non urna hendrerit, consequat massa non.
+            J&rsquo;ai acquis une solide expertise et de nombreuses compétences
+            pour réaliser des projets de qualité.
             <br />
             <br />
-            Pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus
-            lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis
-            interdum.
+            Mon objectif est de toujours offrir un travail professionnel et
+            créatif qui répond aux besoins et aux attentes des clients.
           </p>
         </div>
       </Container>

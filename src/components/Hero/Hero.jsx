@@ -26,10 +26,12 @@ export const Hero = () => {
           & Graphiste
         </h1>
         <p className="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
-          eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium
-          metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem,
-          sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.
+          Hello et bienvenue sur mon portfolio ! Je suis Tom Bost, développeur
+          web et graphiste passionné. Sur ce portfolio, vous pouvez découvrir
+          les différents projets que j&rsquo;ai réalisés. Si vous avez des
+          questions ou souhaitez travailler avec moi sur un projet,
+          n&rsquo;hésitez pas à me contacter. Je suis impatients de collaborer
+          avec vous !
         </p>
         <div className="mt-5 flex justify-center lg:justify-start">
           <LinkButton href="#contact">Me Contacter</LinkButton>
