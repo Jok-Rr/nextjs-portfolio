@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const MobileMenu = ({ scrollDirection }) => {
   return (
     <div
@@ -7,34 +9,34 @@ export const MobileMenu = ({ scrollDirection }) => {
     >
       <ul className="flex justify-between ">
         <li className="text-xl">
-          <a href={"/#"}>
+          <Link href={"/#"}>
             <i className="fa-solid fa-house-blank"></i>
-          </a>
+          </Link>
         </li>
         <li className="text-xl active:text-neonblue">
-          <a href={"/#about"}>
+          <Link href={"/#about"}>
             <i className="fa-solid fa-user"></i>
-          </a>
+          </Link>
         </li>
         <li className="active text-xl">
-          <a href={"/#roadmap"}>
+          <Link href={"/#roadmap"}>
             <i className="fa-solid fa-road"></i>
-          </a>
+          </Link>
         </li>
         <li className="active text-xl">
-          <a href={"/#projects"}>
+          <Link href={"/#projects"}>
             <i className="fa-solid fa-suitcase"></i>
-          </a>
+          </Link>
         </li>
         <li className="active text-xl">
-          <a href={"/#testimonials"}>
+          <Link href={"/#testimonials"}>
             <i className="fa-solid fa-star-sharp"></i>
-          </a>
+          </Link>
         </li>
         <li className="text-xl">
-          <a href={"/#contact"}>
+          <Link href={"/#contact"}>
             <i className="fa-solid fa-comment"></i>
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

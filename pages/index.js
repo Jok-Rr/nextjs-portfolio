@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>PorteFolio | Tom Bost</title>
+        <title>Tom Bost | PorteFolio</title>
       </Head>
       <Hero />
       <About />

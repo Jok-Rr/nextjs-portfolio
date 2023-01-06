@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { LinkButton } from "./atom/LinkButton";
 import { Logo } from "./atom/Logo";
@@ -38,25 +39,26 @@ const Header = () => {
           "lg:bg-noblack lg:bg-opacity-70 lg:backdrop-blur-md"
         }`}
       >
-        <a href={"/#"}>
+        <Link href={"/"}>
           <Logo width="47" />
-        </a>
+        </Link>
+
         <nav className="hidden font-semibold capitalize lg:block">
-          <a href={"/#"} className={"ml-5"}>
+          <Link href={"/"} className={"ml-5"}>
             Accueil
-          </a>
-          <a href={"/#about"} className={"ml-5"}>
+          </Link>
+          <Link href={"/#about"} className={"ml-5"} scroll={true}>
             Moi
-          </a>
-          <a href={"/#roadmap"} className={"ml-5"}>
+          </Link>
+          <Link href={"/#roadmap"} className={"ml-5"}>
             Parcours
-          </a>
-          <a href={"/#projects"} className={"ml-5"}>
+          </Link>
+          <Link href={"/#projects"} className={"ml-5"}>
             Projets
-          </a>
-          <a href={"/#testimonials"} className={"ml-5"}>
+          </Link>
+          <Link href={"/#testimonials"} className={"ml-5"}>
             Témoignages
-          </a>
+          </Link>
           <LinkButton href="#contact" classNameButton={"ml-5"}>
             Contact
           </LinkButton>
