@@ -1,6 +1,6 @@
 import Image from "next/image";
 import me from "/public/images/portrait.png";
-
+import { gitLink } from "../../lib/config";
 import { IconGithub } from "../atom/IconGithub";
 import { IconLinkedin } from "../atom/IconLinkedin";
 import { LinkButton } from "../atom/LinkButton";
@@ -25,17 +25,23 @@ export const Hero = () => {
           </span>
           & Graphiste
         </h1>
-        <p className="">
-          Hello et bienvenue sur mon portfolio ! Je suis Tom Bost, développeur
-          web et graphiste passionné. Sur ce portfolio, vous pouvez découvrir
-          les différents projets que j&rsquo;ai réalisés. Si vous avez des
-          questions ou souhaitez travailler avec moi sur un projet,
-          n&rsquo;hésitez pas à me contacter. Je suis impatients de collaborer
-          avec vous !
-        </p>
+        <div className="">
+          <p> Hello et bienvenue sur mon portfolio ! </p>
+          <p>
+            Je suis Tom Bost, développeur web et graphiste passionné. Sur ce
+            portfolio, vous pouvez découvrir les différents projets que
+            j&rsquo;ai réalisés.
+          </p>
+          <br />
+          <p>
+            Si vous avez des questions ou souhaitez travailler avec moi sur un
+            projet, n&rsquo;hésitez pas à me contacter. Je suis impatients de
+            collaborer avec vous !
+          </p>
+        </div>
         <div className="mt-5 flex justify-center lg:justify-start">
           <LinkButton href="#contact">Me Contacter</LinkButton>
-          <IconGithub className="ml-4" />
+          <IconGithub className="ml-4" url={gitLink} />
           <IconLinkedin className="ml-4" />
         </div>
       </div>

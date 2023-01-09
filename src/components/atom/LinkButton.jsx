@@ -3,7 +3,7 @@ import Link from "next/link";
 export const LinkButton = ({
   children,
   href = "",
-  classNameButton,
+  classNameButton = "",
   target = "",
 }) => {
   return (

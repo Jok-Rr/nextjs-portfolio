@@ -1,6 +1,6 @@
 import { LinkButton } from "../atom/LinkButton";
 import { Heading2 } from "../atom/Heading2";
-import { Heading3 } from "../atom/Heading3";
+import { IconGithub } from "../atom/IconGithub";
 import { PROJECTS } from "/public/projects/index";
 
 export const Modal = ({ showModal, targetProject, setShowModal }) => {
@@ -37,15 +37,26 @@ export const Modal = ({ showModal, targetProject, setShowModal }) => {
               ))}
             </ul>
           )}
-          {PROJECTS[targetProject].site && (
-            <LinkButton
-              classNameButton="block"
-              href={PROJECTS[targetProject].site}
-              target="_blank"
-            >
-              Consulter le site
-            </LinkButton>
-          )}
+          <div className="flex items-center justify-evenly">
+            {PROJECTS[targetProject].site && (
+              <p className="w-[80%]">
+                <LinkButton
+                  classNameButton="block"
+                  href={PROJECTS[targetProject].site}
+                  target="_blank"
+                >
+                  Consulter le site
+                </LinkButton>
+              </p>
+            )}
+            {PROJECTS[targetProject].git && (
+              <p className="w-[10%]">
+                <IconGithub
+                  url={"https://github.com/Jok-Rr/nextjs-portfolio"}
+                />
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </div>

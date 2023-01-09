@@ -5,8 +5,6 @@ import { Heading4 } from "../atom/Heading4";
 import { Heading3 } from "../atom/Heading3";
 import { TESTIMONIAL_LIST } from "/public/testimonials/index";
 
-console.log(TESTIMONIAL_LIST);
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Autoplay, Pagination } from "swiper";
 
@@ -32,7 +30,7 @@ export const Testimonial = () => {
             delay: 2000,
             disableOnInteraction: true,
           }}
-          className="mySwiper col-span-4 md:col-span-2 md:col-start-2  lg:col-span-6 lg:col-start-4"
+          className="mySwiper col-span-4 md:col-span-2 md:col-start-2 lg:col-span-6 lg:col-start-4"
         >
           {TESTIMONIAL_LIST.map((data, index) => {
             return (

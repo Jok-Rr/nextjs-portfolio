@@ -3,6 +3,7 @@ import { Logo } from "./atom/Logo";
 import Link from "next/link";
 import { IconGithub } from "./atom/IconGithub";
 import { IconLinkedin } from "./atom/IconLinkedin";
+import { gitLink } from "../../src/lib/config";
 
 export const Footer = () => {
   return (
@@ -25,7 +26,7 @@ export const Footer = () => {
         </Link>
       </figure>
       <div className="col-span-4 flex justify-center lg:col-span-5 lg:justify-end">
-        <IconGithub className="mx-1" />
+        <IconGithub className="mx-1" url={gitLink} />
         <IconLinkedin className="mx-1" />
       </div>
     </Container>

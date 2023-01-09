@@ -14,6 +14,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "",
     tags: ["React", "NextJS", "TailwindCSS"],
   },
   {
@@ -23,6 +24,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "",
     tags: ["WordPress", "Elementor", "Stripe"],
   },
   {
@@ -32,6 +34,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "",
     tags: ["WordPress", "Elementor"],
   },
   {
@@ -41,6 +44,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "",
     tags: ["Sass", "Grav CMS"],
   },
   {
@@ -50,6 +54,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "",
     tags: ["Wordpress", "Sass", "WooCommerce"],
   },
   {
@@ -59,6 +64,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "",
     tags: ["Sass", "WordPress"],
   },
   {
@@ -68,6 +74,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "https://github.com/Jok-Rr/chatbot.io",
     tags: ["Javascript", "Sass"],
   },
   {
@@ -77,6 +84,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "",
     tags: ["WordPress", "Sass"],
   },
   {
@@ -86,6 +94,7 @@ export const PROJECTS = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eros nisl. Curabitur non urna hendrerit, consequat massa non, pretium metus. Ut maximus ut est vitae imperdiet. Integer id finibus lorem, sit amet pellentesque felis. In ac massa sed lorem lobortis interdum.",
     site: "https://nextjs-portfolio-ten-ochre.vercel.app/",
     year: "2022",
+    git: "",
     tags: ["Html", "Css"],
   },
 ];

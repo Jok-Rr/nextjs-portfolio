@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`left-0 right-0 z-40 flex items-center justify-between px-8 py-5 transition-colors delay-150 lg:fixed lg:px-20 xl:px-48 2xl:px-[25%] ${
+        className={`left-0 right-0 z-40 flex items-center justify-between px-8 py-5 transition-colors delay-150 lg:fixed lg:px-20 xl:px-48 ${
           scrollPosition > 0 &&
           "lg:bg-noblack lg:bg-opacity-70 lg:backdrop-blur-md"
         }`}
