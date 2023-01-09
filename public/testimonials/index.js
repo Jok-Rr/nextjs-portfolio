@@ -20,4 +20,11 @@ export const TESTIMONIAL_LIST = [
     CONTENT:
       "Tom est ambitieux, proactif et autonome ! Il a une motivation sans faille pour apprendre au quotidien et vous délivrera un travail de qualité ! Il sera toujours force de proposition et sait travailler en équipe !",
   },
+  {
+    IMG: require("./jb.jpeg").default,
+    NAME: "Jean-Bernard Bost",
+    WORK: "Coach professionnel de dirigeants et cadres",
+    CONTENT:
+      "Tom est intervenu dans le développement et la mise en place du site web www.bostgalle.com, sa maîtrise et sa capacité à trouver des solutions sur des questions nouvelles pour lui, a permis la création rapide du site. Investi et régulier dans son travail Tom a pu atteindre les objectifs fixés. ",
+  },
 ];
