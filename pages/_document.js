@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html className="dark overflow-x-hidden">
+    <Html className="dark overflow-x-hidden" prefix="og: https://ogp.me/ns#">
       <Head>
         <link
           rel="stylesheet"
@@ -50,7 +50,8 @@ export default function Document() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Tom Bost | PorteFolio" />
-        <meta property="og:description"
+        <meta
+          property="og:description"
           content="Bienvenue sur mon portfolio. Je suis Tom Bost, développeur web et graphiste passionné. Vous pouvez découvrir les différents projets que j'ai réalisés."
         />
         <meta
