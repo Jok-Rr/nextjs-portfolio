@@ -26,7 +26,6 @@ export default function Document() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-
         <link rel="icon" href="/favicon.ico" />
         <meta name="title" content="Tom Bost" />
         <meta
@@ -42,9 +41,23 @@ export default function Document() {
         <meta name="language" content="French" />
         <meta name="author" content="Tom Bost" />
         <meta
-          property="og:image"
-          content="https://dyhost.fr/assets/images/icons/meta2.png"
+          name="description"
+          content="Bienvenue sur mon portfolio. Je suis Tom Bost, développeur web et graphiste passionné. Vous pouvez découvrir les différents projets que j'ai réalisés."
         />
+        <meta
+          property="og:url"
+          content="https://nextjs-portfolio-ten-ochre.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Tom Bost | PorteFolio" />
+        <meta property="og:description"
+          content="Bienvenue sur mon portfolio. Je suis Tom Bost, développeur web et graphiste passionné. Vous pouvez découvrir les différents projets que j'ai réalisés."
+        />
+        <meta
+          property="og:image"
+          content="https://nextjs-portfolio-ten-ochre.vercel.app/_next/static/media/logo-tb.8d19a9ca.svg"
+        />
+        Ú
       </Head>
 
       <body className="relative overflow-x-hidden dark:bg-noblack dark:text-white">
