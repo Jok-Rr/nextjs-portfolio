@@ -41,7 +41,10 @@ export default function Document() {
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="French" />
         <meta name="author" content="Tom Bost" />
-        <meta property="og:image" content="/favicon.ico"></meta>
+        <meta
+          property="og:image"
+          content="https://dyhost.fr/assets/images/icons/meta2.png"
+        />
       </Head>
 
       <body className="relative overflow-x-hidden dark:bg-noblack dark:text-white">
