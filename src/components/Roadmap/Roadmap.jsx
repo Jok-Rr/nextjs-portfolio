@@ -1,9 +1,6 @@
 import { Container } from "../atom/Container";
 import { Heading2 } from "../atom/Heading2";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { data } from "./listExp";
 import { RoadmapCard } from "./RoadmapCard";
@@ -20,18 +17,20 @@ export const Roadmap = () => {
           layout="2-columns"
           animate={true}
         >
-          {data.map((data, index) => {
-            return (
-              <RoadmapCard
-                key={index}
-                title={data.title}
-                subtitle={data.subtitle}
-                content={data.content}
-                date={data.date}
-                type={data.type}
-              />
-            );
-          })}
+          {data
+            .filter((data, idx) => idx < 4)
+            .map((data, index) => {
+              return (
+                <RoadmapCard
+                  key={index}
+                  title={data.title}
+                  subtitle={data.subtitle}
+                  content={data.content}
+                  date={data.date}
+                  type={data.type}
+                />
+              );
+            })}
         </VerticalTimeline>
       </Container>
     </div>

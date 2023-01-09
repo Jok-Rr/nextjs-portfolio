@@ -41,8 +41,9 @@ export const Contact = () => {
       <div className="col-span-4 lg:col-span-8 lg:text-left">
         <Heading2>Un projet ? Contactez-moi 👾</Heading2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec
-          eros nisl. Curabitur non urna hendrerit, consequat massa non.
+          Pour toute demande de collaboration ou pour obtenir plus
+          d&rsquo;informations, n&rsquo;hésitez pas à me contacter via ce
+          formulaire.
         </p>
       </div>
       <form

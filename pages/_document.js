@@ -58,7 +58,6 @@ export default function Document() {
           property="og:image"
           content="https://nextjs-portfolio-ten-ochre.vercel.app/_next/static/media/logo-tb.8d19a9ca.svg"
         />
-        Ú
       </Head>
 
       <body className="relative overflow-x-hidden dark:bg-noblack dark:text-white">
